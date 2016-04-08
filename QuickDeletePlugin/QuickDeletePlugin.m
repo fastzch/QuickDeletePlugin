@@ -249,6 +249,11 @@
     }
 }
 
+/**
+ *  Show a message box for debugging sth.
+ *
+ *  @param text, message info.
+ */
 - (void)showMessageBox:(NSString *)text {
     NSAlert *alert = [[NSAlert alloc] init];
     
