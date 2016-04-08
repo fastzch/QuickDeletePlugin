@@ -50,7 +50,6 @@
     if (menuItem) {
         [[menuItem submenu] addItem:[NSMenuItem separatorItem]];
         NSMenuItem *actionMenuItem = [[NSMenuItem alloc] initWithTitle:@"Delete Line(s)" action:@selector(deleteLinesAction:) keyEquivalent:@"d"];
-        //[actionMenuItem setKeyEquivalentModifierMask:NSAlphaShiftKeyMask | NSControlKeyMask];
         [actionMenuItem setTarget:self];
         [[menuItem submenu] addItem:actionMenuItem];
         
@@ -215,21 +214,17 @@
                 if([self backCharIsReturnChar]){
                     //current position is line of start, and none char in this line.
                     deleteRange = NSMakeRange(_currentRange.location, 1);
-                    NSLog(@"current position is line of start, range:%@", NSStringFromRange(deleteRange));
                 }else{
                     //current position is line of end.
                     //then, delete
                     NSInteger s = [self findPreviousReturnChar ];
                     deleteRange = NSMakeRange(s, _currentRange.location - s + 1);
-                    NSLog(@"current position is line of end, range:%@", NSStringFromRange(deleteRange));
                 }
             }else{
                 if([self backCharIsReturnChar]){
                     //current position is line of start.
                     NSInteger next = [self findNextReturnChar ];
-                    NSLog(@"2 current position: %zi, next position:%zi", _currentRange.location, next);
                     deleteRange = NSMakeRange(_currentRange.location, next - _currentRange.location +1 );
-                    NSLog(@"2 current position is line of start, range:%@", NSStringFromRange(deleteRange));
                 }else{
                     //current posion is not line of start or end.
                     NSInteger s = [self findPreviousReturnChar ];
@@ -238,12 +233,9 @@
                 }
             }
         }
-        
-        //        NSLog(@"will be deleted range: %@", NSStringFromRange(deleteRange));
         @try {
             [_codeEditor insertText:@"" replacementRange:deleteRange];
-        }
-        @catch (NSException *exception) {
+        }@catch (NSException *exception) {
             [_codeEditor insertText:@"" replacementRange:deleteRange];
         }
     }
