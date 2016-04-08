@@ -6,94 +6,166 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3ED75B341CB782B8000919DB /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED75B331CB782B8000919DB /* AppKit.framework */; };
+		3ED75B361CB782B8000919DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED75B351CB782B8000919DB /* Foundation.framework */; };
+		3ED75B3A1CB782B8000919DB /* QuickDeletePlugin.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 3ED75B391CB782B8000919DB /* QuickDeletePlugin.xcscheme */; };
+		3ED75B3D1CB782B8000919DB /* QuickDeletePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED75B3C1CB782B8000919DB /* QuickDeletePlugin.m */; };
+		3ED75B401CB782B8000919DB /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED75B3F1CB782B8000919DB /* NSObject_Extension.m */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		3E1BA29E1C92AFF0000481A5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
-		3E1BA2A01C92AFF0000481A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		3E1BA2A41C92AFF0000481A5 /* QuickDeletePlugin.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = QuickDeletePlugin.xcscheme; path = QuickDeletePlugin.xcodeproj/xcshareddata/xcschemes/QuickDeletePlugin.xcscheme; sourceTree = SOURCE_ROOT; };
-		3E1BA2A61C92AFF0000481A5 /* QuickDeletePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickDeletePlugin.h; sourceTree = "<group>"; };
-		3E1BA2A71C92AFF0000481A5 /* QuickDeletePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickDeletePlugin.m; sourceTree = "<group>"; };
-		3E1BA2A91C92AFF0000481A5 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
-		3E1BA2AA1C92AFF0000481A5 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
-		3E1BA2AC1C92AFF0000481A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ED75B301CB782B8000919DB /* QuickDeletePlugin.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickDeletePlugin.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ED75B331CB782B8000919DB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		3ED75B351CB782B8000919DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		3ED75B391CB782B8000919DB /* QuickDeletePlugin.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = QuickDeletePlugin.xcscheme; path = QuickDeletePlugin.xcodeproj/xcshareddata/xcschemes/QuickDeletePlugin.xcscheme; sourceTree = SOURCE_ROOT; };
+		3ED75B3B1CB782B8000919DB /* QuickDeletePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickDeletePlugin.h; sourceTree = "<group>"; };
+		3ED75B3C1CB782B8000919DB /* QuickDeletePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickDeletePlugin.m; sourceTree = "<group>"; };
+		3ED75B3E1CB782B8000919DB /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
+		3ED75B3F1CB782B8000919DB /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
+		3ED75B411CB782B8000919DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		3ED75B2E1CB782B8000919DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED75B341CB782B8000919DB /* AppKit.framework in Frameworks */,
+				3ED75B361CB782B8000919DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
-		3E1BA2921C92AFEF000481A5 = {
+		3ED75B271CB782B8000919DB = {
 			isa = PBXGroup;
 			children = (
-				3E1BA2A21C92AFF0000481A5 /* QuickDeletePlugin */,
-				3E1BA29D1C92AFEF000481A5 /* Frameworks */,
-				3E1BA29C1C92AFEF000481A5 /* Products */,
+				3ED75B371CB782B8000919DB /* QuickDeletePlugin */,
+				3ED75B321CB782B8000919DB /* Frameworks */,
+				3ED75B311CB782B8000919DB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3E1BA29C1C92AFEF000481A5 /* Products */ = {
+		3ED75B311CB782B8000919DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				3ED75B301CB782B8000919DB /* QuickDeletePlugin.xcplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3E1BA29D1C92AFEF000481A5 /* Frameworks */ = {
+		3ED75B321CB782B8000919DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3E1BA29E1C92AFF0000481A5 /* AppKit.framework */,
-				3E1BA2A01C92AFF0000481A5 /* Foundation.framework */,
+				3ED75B331CB782B8000919DB /* AppKit.framework */,
+				3ED75B351CB782B8000919DB /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3E1BA2A21C92AFF0000481A5 /* QuickDeletePlugin */ = {
+		3ED75B371CB782B8000919DB /* QuickDeletePlugin */ = {
 			isa = PBXGroup;
 			children = (
-				3E1BA2A61C92AFF0000481A5 /* QuickDeletePlugin.h */,
-				3E1BA2A71C92AFF0000481A5 /* QuickDeletePlugin.m */,
-				3E1BA2A91C92AFF0000481A5 /* NSObject_Extension.h */,
-				3E1BA2AA1C92AFF0000481A5 /* NSObject_Extension.m */,
-				3E1BA2AC1C92AFF0000481A5 /* Info.plist */,
-				3E1BA2A31C92AFF0000481A5 /* Supporting Files */,
+				3ED75B3B1CB782B8000919DB /* QuickDeletePlugin.h */,
+				3ED75B3C1CB782B8000919DB /* QuickDeletePlugin.m */,
+				3ED75B3E1CB782B8000919DB /* NSObject_Extension.h */,
+				3ED75B3F1CB782B8000919DB /* NSObject_Extension.m */,
+				3ED75B411CB782B8000919DB /* Info.plist */,
+				3ED75B381CB782B8000919DB /* Supporting Files */,
 			);
 			path = QuickDeletePlugin;
 			sourceTree = "<group>";
 		};
-		3E1BA2A31C92AFF0000481A5 /* Supporting Files */ = {
+		3ED75B381CB782B8000919DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3E1BA2A41C92AFF0000481A5 /* QuickDeletePlugin.xcscheme */,
+				3ED75B391CB782B8000919DB /* QuickDeletePlugin.xcscheme */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXNativeTarget section */
+		3ED75B2F1CB782B8000919DB /* QuickDeletePlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ED75B441CB782B8000919DB /* Build configuration list for PBXNativeTarget "QuickDeletePlugin" */;
+			buildPhases = (
+				3ED75B2C1CB782B8000919DB /* Sources */,
+				3ED75B2D1CB782B8000919DB /* Resources */,
+				3ED75B2E1CB782B8000919DB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickDeletePlugin;
+			productName = QuickDeletePlugin;
+			productReference = 3ED75B301CB782B8000919DB /* QuickDeletePlugin.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
 /* Begin PBXProject section */
-		3E1BA2931C92AFEF000481A5 /* Project object */ = {
+		3ED75B281CB782B8000919DB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Robin Studio";
+				TargetAttributes = {
+					3ED75B2F1CB782B8000919DB = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
 			};
-			buildConfigurationList = 3E1BA2961C92AFEF000481A5 /* Build configuration list for PBXProject "QuickDeletePlugin" */;
+			buildConfigurationList = 3ED75B2B1CB782B8000919DB /* Build configuration list for PBXProject "QuickDeletePlugin" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 3E1BA2921C92AFEF000481A5;
-			productRefGroup = 3E1BA29C1C92AFEF000481A5 /* Products */;
+			mainGroup = 3ED75B271CB782B8000919DB;
+			productRefGroup = 3ED75B311CB782B8000919DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				3ED75B2F1CB782B8000919DB /* QuickDeletePlugin */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		3ED75B2D1CB782B8000919DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED75B3A1CB782B8000919DB /* QuickDeletePlugin.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3ED75B2C1CB782B8000919DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED75B3D1CB782B8000919DB /* QuickDeletePlugin.m in Sources */,
+				3ED75B401CB782B8000919DB /* NSObject_Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
 /* Begin XCBuildConfiguration section */
-		3E1BA2AD1C92AFF0000481A5 /* Debug */ = {
+		3ED75B421CB782B8000919DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -130,10 +202,11 @@
 			};
 			name = Debug;
 		};
-		3E1BA2AE1C92AFF0000481A5 /* Release */ = {
+		3ED75B431CB782B8000919DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -163,19 +236,57 @@
 			};
 			name = Release;
 		};
+		3ED75B451CB782B8000919DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = QuickDeletePlugin/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mxzhang.xcode.QuickDeletePlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		3ED75B461CB782B8000919DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = QuickDeletePlugin/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mxzhang.xcode.QuickDeletePlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3E1BA2961C92AFEF000481A5 /* Build configuration list for PBXProject "QuickDeletePlugin" */ = {
+		3ED75B2B1CB782B8000919DB /* Build configuration list for PBXProject "QuickDeletePlugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3E1BA2AD1C92AFF0000481A5 /* Debug */,
-				3E1BA2AE1C92AFF0000481A5 /* Release */,
+				3ED75B421CB782B8000919DB /* Debug */,
+				3ED75B431CB782B8000919DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3ED75B441CB782B8000919DB /* Build configuration list for PBXNativeTarget "QuickDeletePlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ED75B451CB782B8000919DB /* Debug */,
+				3ED75B461CB782B8000919DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3E1BA2931C92AFEF000481A5 /* Project object */;
+	rootObject = 3ED75B281CB782B8000919DB /* Project object */;
 }
